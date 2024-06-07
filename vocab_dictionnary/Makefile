@@ -1,0 +1,10 @@
+up:
+	docker compose up -d --build --wait $(service)
+start:
+	docker compose up
+down: 
+	docker compose down --remove-orphans -v
+build:
+	docker compose build $(service)
+logs:
+	docker compose logs -f $(service)
