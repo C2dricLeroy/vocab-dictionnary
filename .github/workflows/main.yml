@@ -19,7 +19,7 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          docker compose down --remove-orphans
+          docker compose down --remove-orphans -v code
           docker system prune -a -f
 
     - name: Send files to server
