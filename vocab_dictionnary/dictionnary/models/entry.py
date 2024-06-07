@@ -5,4 +5,10 @@ from dictionnary.models import Dictionnary
 class Entry(models.Model):
     name = models.CharField(max_length=100)
     traduction = models.CharField(max_length=200)
-    dictionnary_id = models.ForeignKey(Dictionnary, on_delete=models.CASCADE)
+    dictionnary = models.ForeignKey(Dictionnary, on_delete=models.CASCADE)
+
+
+    def get_display_name(id:int) -> str: 
+        entry = Entry.objects.get(id=id)
+        display_name = entry.name.capitalize()
+        return display_name
