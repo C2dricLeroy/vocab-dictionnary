@@ -8,3 +8,6 @@ build:
 	docker compose build $(service)
 logs:
 	docker compose logs -f $(service)
+migrate:
+	docker compose exec web python3 manage.py makemigrations
+	docker compose exec web python3 manage.py migrate

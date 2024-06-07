@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-th%eisz&u_3cjb-p3p$yfzqcz*@5jants_y^6p&ln*z7(2ianz
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['82.165.34.13']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -51,11 +51,11 @@ WSGI_APPLICATION = 'vocab_dictionnary.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-
+        "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "localhost",
-        "PORT": 5438,
+        "HOST": "db",
+        "PORT": 5432,
     }
 }
 
