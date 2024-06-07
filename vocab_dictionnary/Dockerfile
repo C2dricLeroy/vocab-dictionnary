@@ -10,6 +10,6 @@ COPY . .
 
 EXPOSE 8000
 
-ENV DJANGO_SETTINGS_MODULE=myrunnerapp.settings
+ENV DJANGO_SETTINGS_MODULE=vocab_dictionnary.settings
 
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
