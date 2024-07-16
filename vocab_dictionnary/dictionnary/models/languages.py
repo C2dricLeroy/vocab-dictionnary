@@ -6,8 +6,8 @@ def search_language_by_id(language_id: int):
 
 
 class Languages(models.Model):
-    name = models.CharField(max_length=100)
-    code = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
+    code = models.CharField(max_length=100, unique=True)
     is_valid = models.BooleanField(default=True)
     description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
