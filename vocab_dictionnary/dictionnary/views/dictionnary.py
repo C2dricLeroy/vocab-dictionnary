@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from django.shortcuts import get_object_or_404
-from dictionnary.models import Dictionary, Languages
+from dictionnary import Dictionary, Languages
 import json
 
 
@@ -32,5 +32,18 @@ def create_dictionary(request):
     except json.JSONDecodeError:
         return JsonResponse({'error': 'Invalid JSON'}, status=400)
 
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+    
+
+@csrf_exempt
+def get_dictionary_by_id(request):
+    id = request.GET.get('id')
+
+    try:
+        dictionary = Dictionary.objects.get(id=id)
+        return JsonResponse({'dictionary': dictionary.to_dict()})
+    except Dictionary.DoesNotExist:
+        return JsonResponse({'error': 'Dictionary not found'}, status=404)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)

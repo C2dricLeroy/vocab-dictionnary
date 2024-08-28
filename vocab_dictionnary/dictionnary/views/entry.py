@@ -1,9 +1,9 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
-from dictionnary.models.entry import Entry
-from dictionnary.models.dictionnary import Dictionnary
+from dictionnary import Dictionnary, Entry
 import json
+
 
 @csrf_exempt
 @require_POST
@@ -34,12 +34,12 @@ def get_entry_by_name(request):
 def get_random_entry(request):
     pass
 
-def get_display_name(request):
+def get_display_name_by_id(request):
     id = request.GET.get('id')
 
     try:
         res = Entry.get_display_name(id)
-        
+
         return JsonResponse({'display_name': res})
     except Entry.DoesNotExist:
         return JsonResponse({'error': 'Entry not found'}, status=404)

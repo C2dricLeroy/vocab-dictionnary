@@ -1,0 +1,803 @@
+[
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "Dictionnary",
+        "importPath": "dictionnary",
+        "description": "dictionnary",
+        "isExtraImport": true,
+        "detail": "dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "Dictionary",
+        "importPath": "dictionnary",
+        "description": "dictionnary",
+        "isExtraImport": true,
+        "detail": "dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "Languages",
+        "importPath": "dictionnary",
+        "description": "dictionnary",
+        "isExtraImport": true,
+        "detail": "dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "Dictionnary",
+        "importPath": "dictionnary",
+        "description": "dictionnary",
+        "isExtraImport": true,
+        "detail": "dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "Entry",
+        "importPath": "dictionnary",
+        "description": "dictionnary",
+        "isExtraImport": true,
+        "detail": "dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "require_POST",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "require_POST",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationSettings",
+        "kind": 6,
+        "importPath": "app_params.models.NotificationSettings",
+        "description": "app_params.models.NotificationSettings",
+        "peekOfCode": "class NotificationSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    email_notifications = models.BooleanField(default=True)\n    push_notifications = models.BooleanField(default=False)\n    sms_notifications = models.BooleanField(default=False)\n    daily_summary_notifications = models.BooleanField(default=False)\n    daily_reminder_notifications = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.user.username} Notification Settings\"",
+        "detail": "app_params.models.NotificationSettings",
+        "documentation": {}
+    },
+    {
+        "label": "PrivacySettings",
+        "kind": 6,
+        "importPath": "app_params.models.PrivacySettings",
+        "description": "app_params.models.PrivacySettings",
+        "peekOfCode": "class PrivacySettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    share_progress = models.BooleanField(default=True)\n    show_online_status = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.user.username} Privacy Settings\"",
+        "detail": "app_params.models.PrivacySettings",
+        "documentation": {}
+    },
+    {
+        "label": "Theme",
+        "kind": 6,
+        "importPath": "app_params.models.Theme",
+        "description": "app_params.models.Theme",
+        "peekOfCode": "class Theme(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    primary_color = models.CharField(max_length=7, help_text='Hex code for the primary color')\n    secondary_color = models.CharField(max_length=7, help_text='Hex code for the secondary color')\n    background_color = models.CharField(max_length=7, help_text='Hex code for the background color')\n    text_color = models.CharField(max_length=7, help_text='Hex code for the text color')\n    border_color = models.CharField(max_length=7, blank=True, null=True, help_text='Hex code for the border color (optional)')\n    is_default = models.BooleanField(default=False, help_text='Indicates if this is the default theme')\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)",
+        "detail": "app_params.models.Theme",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeSettings",
+        "kind": 6,
+        "importPath": "app_params.models.ThemeSettings",
+        "description": "app_params.models.ThemeSettings",
+        "peekOfCode": "class ThemeSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    theme = models.ForeignKey('Theme', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Theme Settings\"",
+        "detail": "app_params.models.ThemeSettings",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfile",
+        "kind": 6,
+        "importPath": "app_params.models.UserProfile",
+        "description": "app_params.models.UserProfile",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    bio = models.TextField(blank=True, null=True)\n    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)\n    birth_date = models.DateField(blank=True, null=True)\n    location = models.CharField(max_length=100, blank=True, null=True)\n    website = models.URLField(blank=True, null=True)\n    social_media_links = models.JSONField(blank=True, null=True)  # Store links to social media profiles\n    def __str__(self):\n        return self.user.username",
+        "detail": "app_params.models.UserProfile",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettings",
+        "kind": 6,
+        "importPath": "app_params.models.UserSettings",
+        "description": "app_params.models.UserSettings",
+        "peekOfCode": "class UserSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    interface_language = models.ForeignKey('dictionnary.Languages', on_delete=models.SET_NULL, null=True, blank=True)\n    default_dictionary = models.ForeignKey('dictionnary.Dictionary', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Settings\"",
+        "detail": "app_params.models.UserSettings",
+        "documentation": {}
+    },
+    {
+        "label": "AppParamsConfig",
+        "kind": 6,
+        "importPath": "app_params.apps",
+        "description": "app_params.apps",
+        "peekOfCode": "class AppParamsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'app_params'",
+        "detail": "app_params.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Dictionnary",
+        "kind": 6,
+        "importPath": "dictionnary.models.dictionnary",
+        "description": "dictionnary.models.dictionnary",
+        "peekOfCode": "class Dictionnary(models.Model):\n    name = models.CharField(max_length=100)\n    source_language_id = models.ForeignKey('Languages', related_name='source_dictionaries', on_delete=models.CASCADE)\n    target_language_id = models.ForeignKey('Languages', related_name='target_dictionaries', on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.name",
+        "detail": "dictionnary.models.dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "Entry",
+        "kind": 6,
+        "importPath": "dictionnary.models.entry",
+        "description": "dictionnary.models.entry",
+        "peekOfCode": "class Entry(models.Model):\n    name = models.CharField(max_length=100)\n    traduction = models.CharField(max_length=200)\n    dictionnary = models.ForeignKey(Dictionnary, on_delete=models.CASCADE)\n    description = models.TextField(blank=True, null=True)\n    def get_display_name(id:int) -> str: \n        entry = Entry.objects.get(id=id)\n        display_name = entry.name.capitalize()\n        return display_name",
+        "detail": "dictionnary.models.entry",
+        "documentation": {}
+    },
+    {
+        "label": "Languages",
+        "kind": 6,
+        "importPath": "dictionnary.models.languages",
+        "description": "dictionnary.models.languages",
+        "peekOfCode": "class Languages(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    code = models.CharField(max_length=100, unique=True)\n    is_valid = models.BooleanField(default=True)\n    description = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def get_code(self):\n        return self.code\n    def __str__(self):",
+        "detail": "dictionnary.models.languages",
+        "documentation": {}
+    },
+    {
+        "label": "search_language_by_id",
+        "kind": 2,
+        "importPath": "dictionnary.models.languages",
+        "description": "dictionnary.models.languages",
+        "peekOfCode": "def search_language_by_id(language_id: int):\n    return Languages.objects.get(id=id)\nclass Languages(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    code = models.CharField(max_length=100, unique=True)\n    is_valid = models.BooleanField(default=True)\n    description = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def get_code(self):",
+        "detail": "dictionnary.models.languages",
+        "documentation": {}
+    },
+    {
+        "label": "create_dictionary",
+        "kind": 2,
+        "importPath": "dictionnary.views.dictionnary",
+        "description": "dictionnary.views.dictionnary",
+        "peekOfCode": "def create_dictionary(request):\n    try:\n        data = json.loads(request.body)\n        name = data['name']\n        source_language_id = data['source_language_id']\n        target_language_id = data['target_language_id']\n        source_language = get_object_or_404(Languages, id=source_language_id)\n        target_language = get_object_or_404(Languages, id=target_language_id)\n        dictionary = Dictionary.objects.create(\n            name=name,",
+        "detail": "dictionnary.views.dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "get_dictionary_by_id",
+        "kind": 2,
+        "importPath": "dictionnary.views.dictionnary",
+        "description": "dictionnary.views.dictionnary",
+        "peekOfCode": "def get_dictionary_by_id(request):\n    id = request.GET.get('id')\n    try:\n        dictionary = Dictionary.objects.get(id=id)\n        return JsonResponse({'dictionary': dictionary.to_dict()})\n    except Dictionary.DoesNotExist:\n        return JsonResponse({'error': 'Dictionary not found'}, status=404)\n    except Exception as e:\n        return JsonResponse({'error': str(e)}, status=500)",
+        "detail": "dictionnary.views.dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "create_entry",
+        "kind": 2,
+        "importPath": "dictionnary.views.entry",
+        "description": "dictionnary.views.entry",
+        "peekOfCode": "def create_entry(request):\n    try:\n        data = json.loads(request.body)\n        name = data['name']\n        traduction = data['traduction']\n        dictionnary_id = data['dictionnary_id']\n        dictionnary = Dictionnary.objects.get(id=dictionnary_id)\n        entry = Entry(name=name, traduction=traduction, dictionnary=dictionnary)\n        entry.save()\n        return JsonResponse({'message': 'Entry created successfully'}, status=201)",
+        "detail": "dictionnary.views.entry",
+        "documentation": {}
+    },
+    {
+        "label": "get_entry_by_id",
+        "kind": 2,
+        "importPath": "dictionnary.views.entry",
+        "description": "dictionnary.views.entry",
+        "peekOfCode": "def get_entry_by_id(request):\n    pass\ndef get_entry_by_name(request):\n    pass\ndef get_random_entry(request):\n    pass\ndef get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)",
+        "detail": "dictionnary.views.entry",
+        "documentation": {}
+    },
+    {
+        "label": "get_entry_by_name",
+        "kind": 2,
+        "importPath": "dictionnary.views.entry",
+        "description": "dictionnary.views.entry",
+        "peekOfCode": "def get_entry_by_name(request):\n    pass\ndef get_random_entry(request):\n    pass\ndef get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)\n        return JsonResponse({'display_name': res})\n    except Entry.DoesNotExist:",
+        "detail": "dictionnary.views.entry",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_entry",
+        "kind": 2,
+        "importPath": "dictionnary.views.entry",
+        "description": "dictionnary.views.entry",
+        "peekOfCode": "def get_random_entry(request):\n    pass\ndef get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)\n        return JsonResponse({'display_name': res})\n    except Entry.DoesNotExist:\n        return JsonResponse({'error': 'Entry not found'}, status=404)\n    except Exception as e:",
+        "detail": "dictionnary.views.entry",
+        "documentation": {}
+    },
+    {
+        "label": "get_display_name_by_id",
+        "kind": 2,
+        "importPath": "dictionnary.views.entry",
+        "description": "dictionnary.views.entry",
+        "peekOfCode": "def get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)\n        return JsonResponse({'display_name': res})\n    except Entry.DoesNotExist:\n        return JsonResponse({'error': 'Entry not found'}, status=404)\n    except Exception as e:\n        return JsonResponse({'error': str(e)}, status=500)",
+        "detail": "dictionnary.views.entry",
+        "documentation": {}
+    },
+    {
+        "label": "DictionnaryConfig",
+        "kind": 6,
+        "importPath": "dictionnary.apps",
+        "description": "dictionnary.apps",
+        "peekOfCode": "class DictionnaryConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'dictionnary'",
+        "detail": "dictionnary.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "dictionnary.urls",
+        "description": "dictionnary.urls",
+        "peekOfCode": "urlpatterns = [\n    path('create-entry/', create_entry, name='create-entry'),\n    path('get-display-name/', get_display_name, name='get-display-name'),\n    path('create-dictionnary/', create_dictionnary, name='create-dictionnary'),\n    path('get-dictionary-by-id', get_dictionary_by_id, name='get-dictionary-by-id' )\n]",
+        "detail": "dictionnary.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.asgi",
+        "description": "vocab_dictionnary.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "vocab_dictionnary.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nSECRET_KEY = 'django-insecure-th%eisz&u_3cjb-p3p$yfzqcz*@5jants_y^6p&ln*z7(2ianz'\nDEBUG = True\nALLOWED_HOSTS = ['82.165.34.13', 'localhost']\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-th%eisz&u_3cjb-p3p$yfzqcz*@5jants_y^6p&ln*z7(2ianz'\nDEBUG = True\nALLOWED_HOSTS = ['82.165.34.13', 'localhost']\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['82.165.34.13', 'localhost']\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework_swagger',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['82.165.34.13', 'localhost']\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework_swagger',\n    'rest_framework',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework_swagger',\n    'rest_framework',\n    'dictionnary',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'vocab_dictionnary.urls'",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "ROOT_URLCONF = 'vocab_dictionnary.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'vocab_dictionnary.wsgi.application'\nDATABASES = {\n    'default': {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": \"postgres\",\n        \"USER\": \"postgres\",\n        \"PASSWORD\": \"postgres\",\n        \"HOST\": \"db\",\n        \"PORT\": 5432,\n    }",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": \"postgres\",\n        \"USER\": \"postgres\",\n        \"PASSWORD\": \"postgres\",\n        \"HOST\": \"db\",\n        \"PORT\": 5432,\n    }\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "USE_TZ = True\nSTATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAPPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "APPEND_SLASH",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "APPEND_SLASH = False\nREST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.settings",
+        "description": "vocab_dictionnary.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',\n    ]\n}",
+        "detail": "vocab_dictionnary.settings",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "vocab_dictionnary.urls",
+        "description": "vocab_dictionnary.urls",
+        "peekOfCode": "class UserSerializer(serializers.HyperlinkedModelSerializer):\n    class Meta:\n        model = User\n        fields = ['url', 'username', 'email', 'is_staff']\n# ViewSets define the view behavior.\nclass UserViewSet(viewsets.ModelViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n# Routers provide an easy way of automatically determining the URL conf.\nrouter = routers.DefaultRouter()",
+        "detail": "vocab_dictionnary.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "kind": 6,
+        "importPath": "vocab_dictionnary.urls",
+        "description": "vocab_dictionnary.urls",
+        "peekOfCode": "class UserViewSet(viewsets.ModelViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n# Routers provide an easy way of automatically determining the URL conf.\nrouter = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionnary/', include('dictionnary.urls')),",
+        "detail": "vocab_dictionnary.urls",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.urls",
+        "description": "vocab_dictionnary.urls",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionnary/', include('dictionnary.urls')),\n]",
+        "detail": "vocab_dictionnary.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.urls",
+        "description": "vocab_dictionnary.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionnary/', include('dictionnary.urls')),\n]",
+        "detail": "vocab_dictionnary.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "vocab_dictionnary.wsgi",
+        "description": "vocab_dictionnary.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "vocab_dictionnary.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'vocab_dictionnary.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

@@ -1,5 +1,5 @@
 from django.db import models
-from dictionnary.models import Dictionnary
+from dictionnary import Dictionnary
 
 
 class Entry(models.Model):
