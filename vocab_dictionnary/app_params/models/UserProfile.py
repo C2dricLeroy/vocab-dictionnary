@@ -9,7 +9,7 @@ class UserProfile(models.Model):
     birth_date = models.DateField(blank=True, null=True)
     location = models.CharField(max_length=100, blank=True, null=True)
     website = models.URLField(blank=True, null=True)
-    social_media_links = models.JSONField(blank=True, null=True)  # Store links to social media profiles
+    social_media_links = models.JSONField(blank=True, null=True)
 
     def __str__(self):
         return self.user.username

@@ -1,7 +1,7 @@
 up:
 	docker compose up -d --build --wait $(service)
 start:
-	docker compose up
+	docker compose up --build
 down: 
 	docker compose down
 build:
