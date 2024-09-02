@@ -8,7 +8,6 @@ class Entry(models.Model):
     dictionnary = models.ForeignKey(Dictionnary, on_delete=models.CASCADE)
     description = models.TextField(blank=True, null=True)
 
-    def get_display_name(id:int) -> str: 
-        entry = Entry.objects.get(id=id)
-        display_name = entry.name.capitalize()
+    def get_display_name(self) -> str:
+        display_name = f"{self.name} ({self.traduction})"
         return display_name

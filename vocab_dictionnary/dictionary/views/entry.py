@@ -1,5 +1,8 @@
+import random
+
 import django.db
-from django.http import JsonResponse
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from ..models import Dictionnary, Entry
@@ -30,19 +33,33 @@ def get_entry_by_id(request):
     pass
 
 def get_entry_by_name(request):
-    pass
+    entry_name = request.GET.get('name')
 
-def get_random_entry(request):
-    pass
-
-def get_display_name_by_id(request):
-    id = request.GET.get('id')
+    if not entry_name:
+        return HttpResponseBadRequest(JsonResponse({'error': 'Name parameter is missing'}, status=400))
 
     try:
-        res = Entry.get_display_name(id)
-
-        return JsonResponse({'display_name': res})
-    except Entry.DoesNotExist:
+        entry = Entry.objects.get(name=entry_name)
+        return JsonResponse({'entry': entry.to_dict()})
+    except ObjectDoesNotExist:
         return JsonResponse({'error': 'Entry not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+def get_display_name_by_id(request):
+    user_id = request.GET.get('id')
+
+    if not user_id:
+        return HttpResponseBadRequest(JsonResponse({'error': 'ID parameter is missing'}, status=400))
+
+    try:
+        entry = Entry.objects.get(id=user_id)
+        display_name = entry.get_display_name()
+
+        return JsonResponse({'display_name': display_name})
+
+    except ObjectDoesNotExist:
+        return JsonResponse({'error': 'Entry not found'}, status=404)
+
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
