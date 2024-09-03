@@ -17,15 +17,6 @@
         "documentation": {}
     },
     {
-        "label": "django.db",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db",
-        "description": "django.db",
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -178,6 +169,22 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -218,6 +225,22 @@
         "documentation": {}
     },
     {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -234,68 +257,123 @@
         "documentation": {}
     },
     {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "rest_framework.views",
         "documentation": {}
     },
     {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "rest_framework.views",
         "documentation": {}
     },
     {
-        "label": "csrf_exempt",
-        "importPath": "django.views.decorators.csrf",
-        "description": "django.views.decorators.csrf",
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
         "isExtraImport": true,
-        "detail": "django.views.decorators.csrf",
+        "detail": "rest_framework.views",
         "documentation": {}
     },
     {
-        "label": "csrf_exempt",
-        "importPath": "django.views.decorators.csrf",
-        "description": "django.views.decorators.csrf",
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
         "isExtraImport": true,
-        "detail": "django.views.decorators.csrf",
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
-        "label": "require_POST",
-        "importPath": "django.views.decorators.http",
-        "description": "django.views.decorators.http",
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
         "isExtraImport": true,
-        "detail": "django.views.decorators.http",
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
-        "label": "require_POST",
-        "importPath": "django.views.decorators.http",
-        "description": "django.views.decorators.http",
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
         "isExtraImport": true,
-        "detail": "django.views.decorators.http",
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
-        "label": "get_object_or_404",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -323,19 +401,52 @@
         "documentation": {}
     },
     {
-        "label": "create_dictionary",
-        "importPath": "dictionnary.views.dictionnary",
-        "description": "dictionnary.views.dictionnary",
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "dictionnary.views.dictionnary",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "Dictionnary",
-        "importPath": "dictionnary.models.dictionnary",
-        "description": "dictionnary.models.dictionnary",
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "dictionnary.models.dictionnary",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectDoesNotExist",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseBadRequest",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -364,30 +475,6 @@
         "documentation": {}
     },
     {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "routers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -409,7 +496,7 @@
         "kind": 6,
         "importPath": "app_params.migrations.0001_initial",
         "description": "app_params.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('dictionnary', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Theme',\n            fields=[",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('dictionary', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Theme',\n            fields=[",
         "detail": "app_params.migrations.0001_initial",
         "documentation": {}
     },
@@ -463,7 +550,7 @@
         "kind": 6,
         "importPath": "app_params.models.UserSettings",
         "description": "app_params.models.UserSettings",
-        "peekOfCode": "class UserSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    interface_language = models.ForeignKey('dictionnary.Languages', on_delete=models.SET_NULL, null=True, blank=True)\n    default_dictionnary = models.ForeignKey('dictionnary.Dictionnary', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Settings\"",
+        "peekOfCode": "class UserSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    interface_language = models.ForeignKey('dictionary.Languages', on_delete=models.SET_NULL, null=True, blank=True)\n    default_dictionnary = models.ForeignKey('dictionary.Dictionnary', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Settings\"",
         "detail": "app_params.models.UserSettings",
         "documentation": {}
     },
@@ -477,129 +564,147 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "SignUpView",
         "kind": 6,
-        "importPath": "dictionnary.migrations.0001_initial",
-        "description": "dictionnary.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Dictionnary',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
-        "detail": "dictionnary.migrations.0001_initial",
+        "importPath": "authentication.views.SignUp",
+        "description": "authentication.views.SignUp",
+        "peekOfCode": "class SignUpView(APIView):\n    serializer_class = UserSerializer\n    def post(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        if serializer.is_valid():\n            self.perform_create(serializer)\n            headers = self.get_success_headers(serializer.data)\n            return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)\n        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)",
+        "detail": "authentication.views.SignUp",
         "documentation": {}
     },
     {
-        "label": "Dictionnary",
+        "label": "AuthentificationConfig",
         "kind": 6,
-        "importPath": "dictionnary.models.dictionnary",
-        "description": "dictionnary.models.dictionnary",
-        "peekOfCode": "class Dictionnary(models.Model):\n    name = models.CharField(max_length=100)\n    source_language_id = models.ForeignKey('Languages', related_name='source_dictionaries', on_delete=models.CASCADE)\n    target_language_id = models.ForeignKey('Languages', related_name='target_dictionaries', on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.name",
-        "detail": "dictionnary.models.dictionnary",
+        "importPath": "authentication.apps",
+        "description": "authentication.apps",
+        "peekOfCode": "class AuthentificationConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'authentication'",
+        "detail": "authentication.apps",
         "documentation": {}
     },
     {
-        "label": "Entry",
+        "label": "UserSerializer",
         "kind": 6,
-        "importPath": "dictionnary.models.entry",
-        "description": "dictionnary.models.entry",
-        "peekOfCode": "class Entry(models.Model):\n    name = models.CharField(max_length=100)\n    traduction = models.CharField(max_length=200)\n    dictionnary = models.ForeignKey(Dictionnary, on_delete=models.CASCADE)\n    description = models.TextField(blank=True, null=True)\n    def get_display_name(id:int) -> str: \n        entry = Entry.objects.get(id=id)\n        display_name = entry.name.capitalize()\n        return display_name",
-        "detail": "dictionnary.models.entry",
-        "documentation": {}
-    },
-    {
-        "label": "Languages",
-        "kind": 6,
-        "importPath": "dictionnary.models.languages",
-        "description": "dictionnary.models.languages",
-        "peekOfCode": "class Languages(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    code = models.CharField(max_length=100, unique=True)\n    is_valid = models.BooleanField(default=True)\n    description = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def get_code(self):\n        return self.code\n    def __str__(self):",
-        "detail": "dictionnary.models.languages",
-        "documentation": {}
-    },
-    {
-        "label": "search_language_by_id",
-        "kind": 2,
-        "importPath": "dictionnary.models.languages",
-        "description": "dictionnary.models.languages",
-        "peekOfCode": "def search_language_by_id(language_id: int):\n    return Languages.objects.get(id=id)\nclass Languages(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    code = models.CharField(max_length=100, unique=True)\n    is_valid = models.BooleanField(default=True)\n    description = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def get_code(self):",
-        "detail": "dictionnary.models.languages",
-        "documentation": {}
-    },
-    {
-        "label": "create_dictionary",
-        "kind": 2,
-        "importPath": "dictionnary.views.dictionnary",
-        "description": "dictionnary.views.dictionnary",
-        "peekOfCode": "def create_dictionary(request):\n    try:\n        data = json.loads(request.body)\n        name = data['name']\n        source_language_id = data['source_language_id']\n        target_language_id = data['target_language_id']\n        source_language = get_object_or_404(Languages, id=source_language_id)\n        target_language = get_object_or_404(Languages, id=target_language_id)\n        dictionary = Dictionnary.objects.create(\n            name=name,",
-        "detail": "dictionnary.views.dictionnary",
-        "documentation": {}
-    },
-    {
-        "label": "get_dictionary_by_id",
-        "kind": 2,
-        "importPath": "dictionnary.views.dictionnary",
-        "description": "dictionnary.views.dictionnary",
-        "peekOfCode": "def get_dictionary_by_id(request):\n    id = request.GET.get('id')\n    try:\n        dictionary = Dictionnary.objects.get(id=id)\n        return JsonResponse({'dictionary': dictionary.to_dict()})\n    except Dictionnary.DoesNotExist:\n        return JsonResponse({'error': 'Dictionary not found'}, status=404)\n    except Exception as e:\n        return JsonResponse({'error': str(e)}, status=500)",
-        "detail": "dictionnary.views.dictionnary",
-        "documentation": {}
-    },
-    {
-        "label": "create_entry",
-        "kind": 2,
-        "importPath": "dictionnary.views.entry",
-        "description": "dictionnary.views.entry",
-        "peekOfCode": "def create_entry(request):\n    try:\n        data = json.loads(request.body)\n        name = data['name']\n        traduction = data['traduction']\n        dictionnary_id = data['dictionnary_id']\n        dictionnary = Dictionnary.objects.get(id=dictionnary_id)\n        entry = Entry(name=name, traduction=traduction, dictionnary=dictionnary)\n        entry.save()\n        return JsonResponse({'message': 'Entry created successfully'}, status=201)",
-        "detail": "dictionnary.views.entry",
-        "documentation": {}
-    },
-    {
-        "label": "get_entry_by_id",
-        "kind": 2,
-        "importPath": "dictionnary.views.entry",
-        "description": "dictionnary.views.entry",
-        "peekOfCode": "def get_entry_by_id(request):\n    pass\ndef get_entry_by_name(request):\n    pass\ndef get_random_entry(request):\n    pass\ndef get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)",
-        "detail": "dictionnary.views.entry",
-        "documentation": {}
-    },
-    {
-        "label": "get_entry_by_name",
-        "kind": 2,
-        "importPath": "dictionnary.views.entry",
-        "description": "dictionnary.views.entry",
-        "peekOfCode": "def get_entry_by_name(request):\n    pass\ndef get_random_entry(request):\n    pass\ndef get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)\n        return JsonResponse({'display_name': res})\n    except Entry.DoesNotExist:",
-        "detail": "dictionnary.views.entry",
-        "documentation": {}
-    },
-    {
-        "label": "get_random_entry",
-        "kind": 2,
-        "importPath": "dictionnary.views.entry",
-        "description": "dictionnary.views.entry",
-        "peekOfCode": "def get_random_entry(request):\n    pass\ndef get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)\n        return JsonResponse({'display_name': res})\n    except Entry.DoesNotExist:\n        return JsonResponse({'error': 'Entry not found'}, status=404)\n    except Exception as e:",
-        "detail": "dictionnary.views.entry",
-        "documentation": {}
-    },
-    {
-        "label": "get_display_name_by_id",
-        "kind": 2,
-        "importPath": "dictionnary.views.entry",
-        "description": "dictionnary.views.entry",
-        "peekOfCode": "def get_display_name_by_id(request):\n    id = request.GET.get('id')\n    try:\n        res = Entry.get_display_name(id)\n        return JsonResponse({'display_name': res})\n    except Entry.DoesNotExist:\n        return JsonResponse({'error': 'Entry not found'}, status=404)\n    except Exception as e:\n        return JsonResponse({'error': str(e)}, status=500)",
-        "detail": "dictionnary.views.entry",
-        "documentation": {}
-    },
-    {
-        "label": "DictionnaryConfig",
-        "kind": 6,
-        "importPath": "dictionnary.apps",
-        "description": "dictionnary.apps",
-        "peekOfCode": "class DictionnaryConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'dictionnary'",
-        "detail": "dictionnary.apps",
+        "importPath": "authentication.serializers",
+        "description": "authentication.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['username', 'email', 'password']\n        extra_kwargs = {'password': {'write_only': True}}\n    def create(self, validated_data):\n        user = User.objects.create_user(\n            username=validated_data['username'],\n            email=validated_data['email'],\n            password=validated_data['password']",
+        "detail": "authentication.serializers",
         "documentation": {}
     },
     {
         "label": "urlpatterns",
         "kind": 5,
-        "importPath": "dictionnary.urls",
-        "description": "dictionnary.urls",
-        "peekOfCode": "urlpatterns = [\n    path('create-entry/', create_entry, name='create-entry'),\n    path('get-display-name/', get_display_name_by_id, name='get-display-name'),\n    path('create-dictionnary/', create_dictionary, name='create-dictionnary'),\n    path('get-dictionary-by-id', get_dictionary_by_id, name='get-dictionary-by-id' )\n]",
-        "detail": "dictionnary.urls",
+        "importPath": "authentication.urls",
+        "description": "authentication.urls",
+        "peekOfCode": "urlpatterns = [\n    path('signup/', SignUpView.as_view(), name='signup'),\n]",
+        "detail": "authentication.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "dictionary.migrations.0001_initial",
+        "description": "dictionary.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Dictionnary',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "dictionary.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Dictionnary",
+        "kind": 6,
+        "importPath": "dictionary.models.dictionnary",
+        "description": "dictionary.models.dictionnary",
+        "peekOfCode": "class Dictionnary(models.Model):\n    name = models.CharField(max_length=100)\n    source_language_id = models.ForeignKey('Languages', related_name='source_dictionaries', on_delete=models.CASCADE)\n    target_language_id = models.ForeignKey('Languages', related_name='target_dictionaries', on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.name",
+        "detail": "dictionary.models.dictionnary",
+        "documentation": {}
+    },
+    {
+        "label": "Entry",
+        "kind": 6,
+        "importPath": "dictionary.models.entry",
+        "description": "dictionary.models.entry",
+        "peekOfCode": "class Entry(models.Model):\n    name = models.CharField(max_length=100)\n    display_name = models.CharField(max_length=300, editable=False)\n    traduction = models.CharField(max_length=200)\n    dictionnary = models.ForeignKey(Dictionnary, on_delete=models.CASCADE)\n    description = models.TextField(blank=True, null=True)\n    def save(self, *args, **kwargs):\n        self.display_name = self.get_display_name()\n        super().save(*args, **kwargs)\n    def get_display_name(self) -> str:",
+        "detail": "dictionary.models.entry",
+        "documentation": {}
+    },
+    {
+        "label": "Languages",
+        "kind": 6,
+        "importPath": "dictionary.models.languages",
+        "description": "dictionary.models.languages",
+        "peekOfCode": "class Languages(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    code = models.CharField(max_length=100, unique=True)\n    is_valid = models.BooleanField(default=True)\n    description = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def get_code(self):\n        return self.code\n    def __str__(self):",
+        "detail": "dictionary.models.languages",
+        "documentation": {}
+    },
+    {
+        "label": "search_language_by_id",
+        "kind": 2,
+        "importPath": "dictionary.models.languages",
+        "description": "dictionary.models.languages",
+        "peekOfCode": "def search_language_by_id(language_id: int):\n    return Languages.objects.get(id=id)\nclass Languages(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    code = models.CharField(max_length=100, unique=True)\n    is_valid = models.BooleanField(default=True)\n    description = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def get_code(self):",
+        "detail": "dictionary.models.languages",
+        "documentation": {}
+    },
+    {
+        "label": "DictionarySerializer",
+        "kind": 6,
+        "importPath": "dictionary.serializers.DictionarySerializer",
+        "description": "dictionary.serializers.DictionarySerializer",
+        "peekOfCode": "class DictionarySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Dictionnary\n        fields = ['name', 'source_language', 'target_language']",
+        "detail": "dictionary.serializers.DictionarySerializer",
+        "documentation": {}
+    },
+    {
+        "label": "EntrySerializer",
+        "kind": 6,
+        "importPath": "dictionary.serializers.EntrySerializer",
+        "description": "dictionary.serializers.EntrySerializer",
+        "peekOfCode": "class EntrySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Entry\n        fields = '__all__'",
+        "detail": "dictionary.serializers.EntrySerializer",
+        "documentation": {}
+    },
+    {
+        "label": "CreateDictionaryView",
+        "kind": 6,
+        "importPath": "dictionary.views.CreateDictionaryView",
+        "description": "dictionary.views.CreateDictionaryView",
+        "peekOfCode": "class CreateDictionaryView(APIView):\n    def post(self, request):\n        serializer = DictionarySerializer(data=request.data)\n        if serializer.is_valid():\n            source_language = get_object_or_404(Languages, id=serializer.validated_data['source_language'])\n            target_language = get_object_or_404(Languages, id=serializer.validated_data['target_language'])\n            dictionary = Dictionnary.objects.create(\n                name=serializer.validated_data['name'],\n                source_language=source_language,\n                target_language=target_language",
+        "detail": "dictionary.views.CreateDictionaryView",
+        "documentation": {}
+    },
+    {
+        "label": "CreateEntryView",
+        "kind": 6,
+        "importPath": "dictionary.views.EntryView",
+        "description": "dictionary.views.EntryView",
+        "peekOfCode": "class CreateEntryView(APIView):\n    def post(self, request):\n        try:\n            data = json.loads(request.body)\n            name = data['name']\n            traduction = data['traduction']\n            dictionary_id = data['dictionnary_id']\n            dictionary = Dictionary.objects.get(id=dictionary_id)\n            entry = Entry(\n                name=name, traduction=traduction, dictionnary=dictionary",
+        "detail": "dictionary.views.EntryView",
+        "documentation": {}
+    },
+    {
+        "label": "GetEntry",
+        "kind": 6,
+        "importPath": "dictionary.views.EntryView",
+        "description": "dictionary.views.EntryView",
+        "peekOfCode": "class GetEntry(APIView):\n    def get(self, request):\n        entry_id = request.GET.get('id')\n        if not entry_id:\n            return Response({\"error\": \"Missing 'id' parameter\"}, status=400)\n        entry = get_object_or_404(Entry, id=entry_id)\n        serializer = EntrySerializer(entry)\n        return Response(serializer.data)\n    def get_entry_by_name(self):\n        entry_name = self.request.data.GET.get('name')",
+        "detail": "dictionary.views.EntryView",
+        "documentation": {}
+    },
+    {
+        "label": "DictionnaryConfig",
+        "kind": 6,
+        "importPath": "dictionary.apps",
+        "description": "dictionary.apps",
+        "peekOfCode": "class DictionnaryConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'dictionary'",
+        "detail": "dictionary.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "dictionary.urls",
+        "description": "dictionary.urls",
+        "peekOfCode": "urlpatterns = [\n    path('create-dictionary/', CreateDictionaryView.as_view(), \n         name='create-dictionary'),\n   ]",
+        "detail": "dictionary.urls",
         "documentation": {}
     },
     {
@@ -652,7 +757,7 @@
         "kind": 5,
         "importPath": "vocab_dictionnary.settings",
         "description": "vocab_dictionnary.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework_swagger',\n    'rest_framework',\n    'dictionnary',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework_swagger',\n    'rest_framework',\n    'dictionary',",
         "detail": "vocab_dictionnary.settings",
         "documentation": {}
     },
@@ -796,7 +901,7 @@
         "kind": 6,
         "importPath": "vocab_dictionnary.urls",
         "description": "vocab_dictionnary.urls",
-        "peekOfCode": "class UserViewSet(viewsets.ModelViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n# Routers provide an easy way of automatically determining the URL conf.\nrouter = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionnary/', include('dictionnary.urls')),",
+        "peekOfCode": "class UserViewSet(viewsets.ModelViewSet):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n# Routers provide an easy way of automatically determining the URL conf.\nrouter = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionary/', include('dictionary.urls')),",
         "detail": "vocab_dictionnary.urls",
         "documentation": {}
     },
@@ -805,7 +910,7 @@
         "kind": 5,
         "importPath": "vocab_dictionnary.urls",
         "description": "vocab_dictionnary.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionnary/', include('dictionnary.urls')),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'users', UserViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionary/', include('dictionary.urls')),\n]",
         "detail": "vocab_dictionnary.urls",
         "documentation": {}
     },
@@ -814,7 +919,7 @@
         "kind": 5,
         "importPath": "vocab_dictionnary.urls",
         "description": "vocab_dictionnary.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionnary/', include('dictionnary.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('api-auth/', include('rest_framework.urls')),\n    path('dictionary/', include('dictionary.urls')),\n]",
         "detail": "vocab_dictionnary.urls",
         "documentation": {}
     },

@@ -1,0 +1,219 @@
+[
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "migrations.0001_initial",
+        "description": "migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('dictionary', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Theme',\n            fields=[",
+        "detail": "migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationSettings",
+        "kind": 6,
+        "importPath": "models.NotificationSettings",
+        "description": "models.NotificationSettings",
+        "peekOfCode": "class NotificationSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    email_notifications = models.BooleanField(default=True)\n    push_notifications = models.BooleanField(default=False)\n    sms_notifications = models.BooleanField(default=False)\n    daily_summary_notifications = models.BooleanField(default=False)\n    daily_reminder_notifications = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.user.username} Notification Settings\"",
+        "detail": "models.NotificationSettings",
+        "documentation": {}
+    },
+    {
+        "label": "PrivacySettings",
+        "kind": 6,
+        "importPath": "models.PrivacySettings",
+        "description": "models.PrivacySettings",
+        "peekOfCode": "class PrivacySettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    share_progress = models.BooleanField(default=True)\n    show_online_status = models.BooleanField(default=True)\n    def __str__(self):\n        return f\"{self.user.username} Privacy Settings\"",
+        "detail": "models.PrivacySettings",
+        "documentation": {}
+    },
+    {
+        "label": "Theme",
+        "kind": 6,
+        "importPath": "models.Theme",
+        "description": "models.Theme",
+        "peekOfCode": "class Theme(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    primary_color = models.CharField(max_length=7, help_text='Hex code for the primary color')\n    secondary_color = models.CharField(max_length=7, help_text='Hex code for the secondary color')\n    background_color = models.CharField(max_length=7, help_text='Hex code for the background color')\n    text_color = models.CharField(max_length=7, help_text='Hex code for the text color')\n    border_color = models.CharField(max_length=7, blank=True, null=True, help_text='Hex code for the border color (optional)')\n    is_default = models.BooleanField(default=False, help_text='Indicates if this is the default theme')\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)",
+        "detail": "models.Theme",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeSettings",
+        "kind": 6,
+        "importPath": "models.ThemeSettings",
+        "description": "models.ThemeSettings",
+        "peekOfCode": "class ThemeSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    theme = models.ForeignKey('Theme', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Theme Settings\"",
+        "detail": "models.ThemeSettings",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfile",
+        "kind": 6,
+        "importPath": "models.UserProfile",
+        "description": "models.UserProfile",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    bio = models.TextField(blank=True, null=True)\n    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)\n    birth_date = models.DateField(blank=True, null=True)\n    location = models.CharField(max_length=100, blank=True, null=True)\n    website = models.URLField(blank=True, null=True)\n    social_media_links = models.JSONField(blank=True, null=True)\n    def __str__(self):\n        return self.user.username",
+        "detail": "models.UserProfile",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettings",
+        "kind": 6,
+        "importPath": "models.UserSettings",
+        "description": "models.UserSettings",
+        "peekOfCode": "class UserSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    interface_language = models.ForeignKey('dictionary.Languages', on_delete=models.SET_NULL, null=True, blank=True)\n    default_dictionnary = models.ForeignKey('dictionary.Dictionnary', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Settings\"",
+        "detail": "models.UserSettings",
+        "documentation": {}
+    },
+    {
+        "label": "AppParamsConfig",
+        "kind": 6,
+        "importPath": "apps",
+        "description": "apps",
+        "peekOfCode": "class AppParamsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'app_params'",
+        "detail": "apps",
+        "documentation": {}
+    }
+]

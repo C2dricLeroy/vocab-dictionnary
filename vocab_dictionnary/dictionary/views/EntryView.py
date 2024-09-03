@@ -1,37 +1,51 @@
-import random
 
-import django.db
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse, HttpResponseBadRequest
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_POST
-from ..models import Dictionnary, Entry
+from django.shortcuts import get_object_or_404
+from ..models import Dictionary, Entry
 import json
 from rest_framework.views import APIView
+from rest_framework.response import Response
+from ..serializers import EntrySerializer
 
-class EntryView(APIView):
-    @csrf_exempt
-    @require_POST
-    def create_entry(self):
+
+class CreateEntryView(APIView):
+    def post(self, request):
         try:
-            data = json.loads(self.request.body)
+            data = json.loads(request.body)
             name = data['name']
             traduction = data['traduction']
-            dictionnary_id = data['dictionnary_id']
-            dictionnary = Dictionnary.objects.get(id=dictionnary_id)
-            entry = Entry(name=name, traduction=traduction, dictionnary=dictionnary)
+            dictionary_id = data['dictionnary_id']
+            dictionary = Dictionary.objects.get(id=dictionary_id)
+            entry = Entry(
+                name=name, traduction=traduction, dictionnary=dictionary
+                )
             entry.save()
 
-            return JsonResponse({'message': 'Entry created successfully'}, status=201)
-        except Dictionnary.DoesNotExist:
+            return JsonResponse(
+                {'message': 'Entry created successfully'}, status=201
+                )
+        except Dictionary.DoesNotExist:
             return JsonResponse({'error': 'Dictionnary not found'}, status=404)
         except KeyError as e:
-            return JsonResponse({'error': f'Missing key: {e.args[0]}'}, status=400)
+            return JsonResponse(
+                {'error': f'Missing key: {e.args[0]}'}, status=400
+                )
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
 
-    def get_entry_by_id(self):
-        pass
+
+class GetEntry(APIView):
+    def get(self, request):
+        entry_id = request.GET.get('id')
+
+        if not entry_id:
+            return Response({"error": "Missing 'id' parameter"}, status=400)
+
+        entry = get_object_or_404(Entry, id=entry_id)
+        serializer = EntrySerializer(entry)
+        return Response(serializer.data)
+
 
     def get_entry_by_name(self):
         entry_name = self.request.data.GET.get('name')
