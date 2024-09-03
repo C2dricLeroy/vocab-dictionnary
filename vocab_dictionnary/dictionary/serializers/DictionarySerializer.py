@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from ..models import Dictionnary
+from ..models import Dictionary
 
 
 class DictionarySerializer(serializers.ModelSerializer):
     class Meta:
-        model = Dictionnary
+        model = Dictionary
         fields = ['name', 'source_language', 'target_language']
 
     def validate_data(self):

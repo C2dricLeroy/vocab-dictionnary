@@ -1,23 +1,28 @@
+from typing import Any
+from rest_framework import viewsets, status
+from rest_framework.decorators import action
+from rest_framework.request import Request
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import get_object_or_404
 from ..models import Dictionary, Entry
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
 from ..serializers import EntrySerializer
 
-
-class CreateEntryView(APIView):
-    def post(self, request):
+class EntryViewSet(viewsets.ModelViewSet):
+    queryset = Dictionary.objects.all()
+    serializer_class = EntrySerializer
+    permission_classes = [IsAuthenticated]
+    def create(self, request: Request, *args: Any, **kwargs: Any) -> Response:
         data = request.data
         try:
             name = data['name']
             traduction = data['traduction']
-            dictionary_id = data['dictionnary_id']
+            dictionary_id = data['dictionary_id']
             dictionary = get_object_or_404(Dictionary, id=dictionary_id)
             entry = Entry(
                 name=name,
                 traduction=traduction,
-                dictionnary=dictionary
+                dictionary=dictionary
             )
             entry.save()
             return Response(
@@ -35,9 +40,8 @@ class CreateEntryView(APIView):
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
-
-class GetEntry(APIView):
-    def get(self, request):
+    @action(detail=True, methods=['get'])
+    def get_entry(self, request: Request, pk: Any = None) -> Response:
         entry_id = request.GET.get('id')
 
         if not entry_id:
@@ -45,12 +49,6 @@ class GetEntry(APIView):
                 {"error": "Missing 'id' parameter"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        entry = get_object_or_404(Entry, id=entry_id)
-        serializer = EntrySerializer(entry)
+        entry: Entry = get_object_or_404(Entry, id=entry_id)
+        serializer: EntrySerializer = self.get_serializer(entry)
         return Response(serializer.data)
-
-
-class UpdateEntry(APIView):
-    def post(self, request):
-        entry_data = request.data
-        pass

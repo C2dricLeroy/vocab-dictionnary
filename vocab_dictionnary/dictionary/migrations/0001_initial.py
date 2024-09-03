@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Dictionnary',
+            name='Dictionary',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
@@ -40,16 +40,16 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=100)),
                 ('traduction', models.CharField(max_length=200)),
                 ('description', models.TextField(blank=True, null=True)),
-                ('dictionnary', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='dictionary.dictionnary')),
+                ('dictionary', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='dictionary.dictionnary')),
             ],
         ),
         migrations.AddField(
-            model_name='dictionnary',
+            model_name='dictionary',
             name='source_language_id',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='source_dictionaries', to='dictionary.languages'),
         ),
         migrations.AddField(
-            model_name='dictionnary',
+            model_name='dictionary',
             name='target_language_id',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='target_dictionaries', to='dictionary.languages'),
         ),

@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Dictionnary(models.Model):
+class Dictionary(models.Model):
     name = models.CharField(max_length=100)
     source_language_id = models.ForeignKey('Languages', related_name='source_dictionaries', on_delete=models.CASCADE)
     target_language_id = models.ForeignKey('Languages', related_name='target_dictionaries', on_delete=models.CASCADE)
