@@ -649,7 +649,7 @@
         "kind": 6,
         "importPath": "dictionary.serializers.DictionarySerializer",
         "description": "dictionary.serializers.DictionarySerializer",
-        "peekOfCode": "class DictionarySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Dictionnary\n        fields = ['name', 'source_language', 'target_language']",
+        "peekOfCode": "class DictionarySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Dictionnary\n        fields = ['name', 'source_language', 'target_language']\n    def validate_data(self):\n        pass",
         "detail": "dictionary.serializers.DictionarySerializer",
         "documentation": {}
     },
@@ -667,7 +667,7 @@
         "kind": 6,
         "importPath": "dictionary.views.CreateDictionaryView",
         "description": "dictionary.views.CreateDictionaryView",
-        "peekOfCode": "class CreateDictionaryView(APIView):\n    def post(self, request):\n        serializer = DictionarySerializer(data=request.data)\n        if serializer.is_valid():\n            source_language = get_object_or_404(Languages, id=serializer.validated_data['source_language'])\n            target_language = get_object_or_404(Languages, id=serializer.validated_data['target_language'])\n            dictionary = Dictionnary.objects.create(\n                name=serializer.validated_data['name'],\n                source_language=source_language,\n                target_language=target_language",
+        "peekOfCode": "class CreateDictionaryView(APIView):\n    def post(self, request):\n        serializer = DictionarySerializer(data=request.data)\n        if serializer.is_valid():\n            source_language = get_object_or_404(\n                Languages, id=serializer.validated_data['source_language']\n            )\n            target_language = get_object_or_404(\n                Languages, id=serializer.validated_data['target_language']\n            )",
         "detail": "dictionary.views.CreateDictionaryView",
         "documentation": {}
     },
