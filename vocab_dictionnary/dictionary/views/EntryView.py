@@ -47,34 +47,7 @@ class GetEntry(APIView):
         return Response(serializer.data)
 
 
-    def get_entry_by_name(self):
-        entry_name = self.request.data.GET.get('name')
-
-        if not entry_name:
-            return HttpResponseBadRequest(JsonResponse({'error': 'Name parameter is missing'}, status=400))
-
-        try:
-            entry = Entry.objects.get(name=entry_name)
-            return JsonResponse({'entry': entry.to_dict()})
-        except ObjectDoesNotExist:
-            return JsonResponse({'error': 'Entry not found'}, status=404)
-        except Exception as e:
-            return JsonResponse({'error': str(e)}, status=500)
-
-    def get_display_name_by_id(self):
-        user_id = self.request.GET.get('id')
-
-        if not user_id:
-            return HttpResponseBadRequest(JsonResponse({'error': 'ID parameter is missing'}, status=400))
-
-        try:
-            entry = Entry.objects.get(id=user_id)
-            display_name = entry.get_display_name()
-
-            return JsonResponse({'display_name': display_name})
-
-        except ObjectDoesNotExist:
-            return JsonResponse({'error': 'Entry not found'}, status=404)
-
-        except Exception as e:
-            return JsonResponse({'error': str(e)}, status=500)
+class UpdateEntry(APIView):
+    def post(self, request):
+        entry_data = json.loads(request.body)
+        pass

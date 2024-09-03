@@ -685,7 +685,16 @@
         "kind": 6,
         "importPath": "dictionary.views.EntryView",
         "description": "dictionary.views.EntryView",
-        "peekOfCode": "class GetEntry(APIView):\n    def get(self, request):\n        entry_id = request.GET.get('id')\n        if not entry_id:\n            return Response({\"error\": \"Missing 'id' parameter\"}, status=400)\n        entry = get_object_or_404(Entry, id=entry_id)\n        serializer = EntrySerializer(entry)\n        return Response(serializer.data)\n    def get_entry_by_name(self):\n        entry_name = self.request.data.GET.get('name')",
+        "peekOfCode": "class GetEntry(APIView):\n    def get(self, request):\n        entry_id = request.GET.get('id')\n        if not entry_id:\n            return Response({\"error\": \"Missing 'id' parameter\"}, status=400)\n        entry = get_object_or_404(Entry, id=entry_id)\n        serializer = EntrySerializer(entry)\n        return Response(serializer.data)\nclass UpdateEntry(APIView):\n    def post(self, request):",
+        "detail": "dictionary.views.EntryView",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateEntry",
+        "kind": 6,
+        "importPath": "dictionary.views.EntryView",
+        "description": "dictionary.views.EntryView",
+        "peekOfCode": "class UpdateEntry(APIView):\n    def post(self, request):\n        entry_data = json.loads(request.body)\n        pass",
         "detail": "dictionary.views.EntryView",
         "documentation": {}
     },
