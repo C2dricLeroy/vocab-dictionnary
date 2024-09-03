@@ -345,6 +345,14 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -414,39 +422,6 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "ObjectDoesNotExist",
-        "importPath": "django.core.exceptions",
-        "description": "django.core.exceptions",
-        "isExtraImport": true,
-        "detail": "django.core.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponseBadRequest",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -672,11 +647,20 @@
         "documentation": {}
     },
     {
+        "label": "GetDictionary",
+        "kind": 6,
+        "importPath": "dictionary.views.CreateDictionaryView",
+        "description": "dictionary.views.CreateDictionaryView",
+        "peekOfCode": "class GetDictionary(APIView):\n    def get(self, request):\n        dictionary_id = request.GET.get('id')\n        if not dictionary_id:\n            return Response({\"error\": \"Missing 'id' parameter\"}, status=400)\n        dictionary = get_object_or_404(Dictionary, id=dictionary_id)\n        serializer = DictionarySerializer(dictionary)\n        return Response(serializer.data)",
+        "detail": "dictionary.views.CreateDictionaryView",
+        "documentation": {}
+    },
+    {
         "label": "CreateEntryView",
         "kind": 6,
         "importPath": "dictionary.views.EntryView",
         "description": "dictionary.views.EntryView",
-        "peekOfCode": "class CreateEntryView(APIView):\n    def post(self, request):\n        try:\n            data = json.loads(request.body)\n            name = data['name']\n            traduction = data['traduction']\n            dictionary_id = data['dictionnary_id']\n            dictionary = Dictionary.objects.get(id=dictionary_id)\n            entry = Entry(\n                name=name, traduction=traduction, dictionnary=dictionary",
+        "peekOfCode": "class CreateEntryView(APIView):\n    def post(self, request):\n        data = request.data\n        try:\n            name = data['name']\n            traduction = data['traduction']\n            dictionary_id = data['dictionnary_id']\n            dictionary = get_object_or_404(Dictionary, id=dictionary_id)\n            entry = Entry(\n                name=name,",
         "detail": "dictionary.views.EntryView",
         "documentation": {}
     },
@@ -685,7 +669,7 @@
         "kind": 6,
         "importPath": "dictionary.views.EntryView",
         "description": "dictionary.views.EntryView",
-        "peekOfCode": "class GetEntry(APIView):\n    def get(self, request):\n        entry_id = request.GET.get('id')\n        if not entry_id:\n            return Response({\"error\": \"Missing 'id' parameter\"}, status=400)\n        entry = get_object_or_404(Entry, id=entry_id)\n        serializer = EntrySerializer(entry)\n        return Response(serializer.data)\nclass UpdateEntry(APIView):\n    def post(self, request):",
+        "peekOfCode": "class GetEntry(APIView):\n    def get(self, request):\n        entry_id = request.GET.get('id')\n        if not entry_id:\n            return Response(\n                {\"error\": \"Missing 'id' parameter\"},\n                status=status.HTTP_400_BAD_REQUEST\n            )\n        entry = get_object_or_404(Entry, id=entry_id)\n        serializer = EntrySerializer(entry)",
         "detail": "dictionary.views.EntryView",
         "documentation": {}
     },
@@ -694,7 +678,7 @@
         "kind": 6,
         "importPath": "dictionary.views.EntryView",
         "description": "dictionary.views.EntryView",
-        "peekOfCode": "class UpdateEntry(APIView):\n    def post(self, request):\n        entry_data = json.loads(request.body)\n        pass",
+        "peekOfCode": "class UpdateEntry(APIView):\n    def post(self, request):\n        entry_data = request.data\n        pass",
         "detail": "dictionary.views.EntryView",
         "documentation": {}
     },

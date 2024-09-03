@@ -1,38 +1,39 @@
-
-from django.core.exceptions import ObjectDoesNotExist
-from django.http import JsonResponse, HttpResponseBadRequest
 from django.shortcuts import get_object_or_404
 from ..models import Dictionary, Entry
-import json
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from ..serializers import EntrySerializer
 
 
 class CreateEntryView(APIView):
     def post(self, request):
+        data = request.data
         try:
-            data = json.loads(request.body)
             name = data['name']
             traduction = data['traduction']
             dictionary_id = data['dictionnary_id']
-            dictionary = Dictionary.objects.get(id=dictionary_id)
+            dictionary = get_object_or_404(Dictionary, id=dictionary_id)
             entry = Entry(
-                name=name, traduction=traduction, dictionnary=dictionary
-                )
+                name=name,
+                traduction=traduction,
+                dictionnary=dictionary
+            )
             entry.save()
-
-            return JsonResponse(
-                {'message': 'Entry created successfully'}, status=201
-                )
-        except Dictionary.DoesNotExist:
-            return JsonResponse({'error': 'Dictionnary not found'}, status=404)
+            return Response(
+                {'message': 'Entry created successfully'},
+                status=status.HTTP_201_CREATED
+            )
         except KeyError as e:
-            return JsonResponse(
-                {'error': f'Missing key: {e.args[0]}'}, status=400
-                )
+            return Response(
+                {'error': f"Missing key: {e.args[0]}"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
         except Exception as e:
-            return JsonResponse({'error': str(e)}, status=500)
+            return Response(
+                {'error': str(e)},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 
 class GetEntry(APIView):
@@ -40,8 +41,10 @@ class GetEntry(APIView):
         entry_id = request.GET.get('id')
 
         if not entry_id:
-            return Response({"error": "Missing 'id' parameter"}, status=400)
-
+            return Response(
+                {"error": "Missing 'id' parameter"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
         entry = get_object_or_404(Entry, id=entry_id)
         serializer = EntrySerializer(entry)
         return Response(serializer.data)
@@ -49,5 +52,5 @@ class GetEntry(APIView):
 
 class UpdateEntry(APIView):
     def post(self, request):
-        entry_data = json.loads(request.body)
+        entry_data = request.data
         pass
