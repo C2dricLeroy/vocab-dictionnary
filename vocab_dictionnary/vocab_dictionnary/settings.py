@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'dictionary',
     'app_params',
-    'authentication',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ WSGI_APPLICATION = 'vocab_dictionnary.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
+        "NAME": "db",
         "USER": "postgres",
         "PASSWORD": "postgres",
         "HOST": "db",
@@ -95,5 +95,9 @@ APPEND_SLASH = False
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
-    ]
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',  # Authentification par jetons
+    ],
 }

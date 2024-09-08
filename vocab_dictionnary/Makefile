@@ -2,7 +2,9 @@ up:
 	docker compose up -d --build --wait $(service)
 start:
 	docker compose up --build
-down: 
+delete:
+	docker compose down --remove-orphans
+down:
 	docker compose down --remove-orphans
 build:
 	docker compose build $(service)

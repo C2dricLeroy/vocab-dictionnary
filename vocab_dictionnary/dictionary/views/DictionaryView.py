@@ -6,13 +6,13 @@ from rest_framework.decorators import action
 from django.shortcuts import get_object_or_404
 from ..models import Dictionary, Languages
 from ..serializers import DictionarySerializer
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 
 
 class DictionaryViewSet(viewsets.ModelViewSet):
     queryset = Dictionary.objects.all()
     serializer_class = DictionarySerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def create(self, request: Request, *args: Any, **kwargs: Any) -> Response:
         """
@@ -37,11 +37,11 @@ class DictionaryViewSet(viewsets.ModelViewSet):
             )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    @action(detail=True, methods=['get'])
-    def get_dictionary(self, request: Request, pk: Any = None) -> Response:
-        """
-        Custom action to get a dictionary by its ID.
-        """
-        dictionary: Dictionary = self.get_object()
-        serializer: DictionarySerializer = self.get_serializer(dictionary)
-        return Response(serializer.data)
+    # @action(detail=True, methods=['get'])
+    # def get_dictionary(self, request: Request, pk: Any = None) -> Response:
+    #     """
+    #     Custom action to get a dictionary by its ID.
+    #     """
+    #     dictionary: Dictionary = self.get_object()
+    #     serializer: DictionarySerializer = self.get_serializer(dictionary)
+    #     return Response(serializer.data)

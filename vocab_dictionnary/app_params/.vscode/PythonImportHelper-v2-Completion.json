@@ -203,7 +203,7 @@
         "kind": 6,
         "importPath": "models.UserSettings",
         "description": "models.UserSettings",
-        "peekOfCode": "class UserSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    interface_language = models.ForeignKey('dictionary.Languages', on_delete=models.SET_NULL, null=True, blank=True)\n    default_dictionnary = models.ForeignKey('dictionary.Dictionnary', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Settings\"",
+        "peekOfCode": "class UserSettings(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    interface_language = models.ForeignKey('dictionary.Languages', on_delete=models.SET_NULL, null=True, blank=True)\n    default_dictionary = models.ForeignKey('dictionary.Dictionnary', on_delete=models.SET_NULL, null=True, blank=True)\n    def __str__(self):\n        return f\"{self.user.username} Settings\"",
         "detail": "models.UserSettings",
         "documentation": {}
     },
