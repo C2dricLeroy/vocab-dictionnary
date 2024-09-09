@@ -1,4 +1,18 @@
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Google Authentication
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.getenv('SOCIAL_AUTH_GOOGLE_OAUTH2_KEY')
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.getenv('SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET')
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+SITE_ID = 1
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,6 +34,9 @@ INSTALLED_APPS = [
     'dictionary',
     'app_params',
     'rest_framework.authtoken',
+    'social_django',
+    'django.contrib.sites',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -30,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'vocab_dictionnary.urls'
@@ -98,6 +116,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # Authentification par jetons
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 }
