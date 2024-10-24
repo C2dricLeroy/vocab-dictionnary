@@ -1,7 +1,16 @@
 from rest_framework.routers import DefaultRouter
-from .views import UserViewSet
+from .views import UserViewSet, LexiLearnTokenObtainPairView
+from django.urls import path
+from rest_framework_simplejwt.views import (
+    TokenRefreshView,
+)
 
 router = DefaultRouter()
 router.register(r'register', UserViewSet, basename='user')
 
-urlpatterns = router.urls
+urlpatterns = [
+    path('login/', LexiLearnTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh')
+]
+
+urlpatterns += router.urls
