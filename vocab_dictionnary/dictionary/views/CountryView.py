@@ -3,7 +3,7 @@ from rest_framework.permissions import IsAuthenticated
 from ..models import Country
 from ..serializers import CountrySerializer
 
-class CountryViewSet(viewsets.ModelViewSet):
+class CountryViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Country.objects.all()
     serializer_class = CountrySerializer
     # permission_classes = [IsAuthenticated]
