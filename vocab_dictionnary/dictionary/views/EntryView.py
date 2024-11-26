@@ -1,11 +1,10 @@
 from typing import Any
 from rest_framework import viewsets, status
-from rest_framework.decorators import action
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.shortcuts import get_object_or_404
-from ..models import Dictionary, Entry
+from ..models import Dictionary, Entry, Description
 from ..serializers import EntrySerializer
 
 
@@ -20,7 +19,7 @@ class EntryViewSet(viewsets.ModelViewSet):
         try:
             original_name = data['original_name']
             translation = data['translation']
-            description = data.get('description', '')
+            description_text = data.get('description', '')
             dictionary_id = data['dictionary_id']
 
             dictionary = get_object_or_404(Dictionary, id=dictionary_id)
@@ -28,12 +27,24 @@ class EntryViewSet(viewsets.ModelViewSet):
             entry, created = Entry.objects.get_or_create(
                 original_name=original_name,
                 translation=translation,
-                defaults={'description': description}
             )
+
+            existing_description = Description.objects.filter(
+                entry=entry,
+                created_by=request.user
+            ).first()
+
+            if not existing_description:
+                Description.objects.create(
+                    entry=entry,
+                    text=description_text,
+                    created_by=request.user
+                )
 
             entry.dictionaries.add(dictionary)
 
             message = "Entry created successfully" if created else "Entry already exists, associated with dictionary"
+
             return Response(
                 {'message': message, 'entry': self.get_serializer(entry).data},
                 status=status.HTTP_201_CREATED if created else status.HTTP_200_OK

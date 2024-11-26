@@ -7,7 +7,6 @@ class Entry(models.Model):
     display_name = models.CharField(max_length=300, editable=False)
     translation = models.CharField(max_length=200)
     dictionaries = models.ManyToManyField('Dictionary', related_name='entries', blank=True)
-    description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
 

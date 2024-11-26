@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from .DescriptionSerializer import DescriptionSerializer
 from ..models import Dictionary, Entry
 
 class EntrySerializer(serializers.ModelSerializer):
@@ -6,6 +7,7 @@ class EntrySerializer(serializers.ModelSerializer):
         many=True,
         queryset=Dictionary.objects.all()
     )
+    descriptions = DescriptionSerializer(many=True, read_only=True)
 
     class Meta:
         model = Entry
@@ -14,8 +16,8 @@ class EntrySerializer(serializers.ModelSerializer):
             'original_name',
             'display_name',
             'translation',
-            'description',
             'dictionaries',
+            'descriptions',
             'created_at',
             'updated_at',
         ]
