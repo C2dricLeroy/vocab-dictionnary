@@ -28,4 +28,8 @@ class LexiLearnTokenObtainPairSerializer(TokenObtainPairSerializer):
 
         attrs['username'] = user.username
 
-        return super().validate(attrs)
+        data = super().validate(attrs)
+
+        data['user_id'] = user.id
+
+        return data

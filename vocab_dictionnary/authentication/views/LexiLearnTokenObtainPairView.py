@@ -15,7 +15,13 @@ class LexiLearnTokenObtainPairView(TokenObtainPairView):
 
         tokens = serializer.validated_data
 
-        response = Response(status=status.HTTP_200_OK)
+        user_id = tokens.get("user_id")
+
+        response_data = {
+            "user_id": user_id,
+        }
+
+        response = Response(response_data, status=status.HTTP_200_OK)
 
         response.set_cookie(
             key='access_token',
