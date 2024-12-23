@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .DescriptionSerializer import DescriptionSerializer
 from ..models import Dictionary, Entry
 
+
 class EntrySerializer(serializers.ModelSerializer):
     dictionaries = serializers.PrimaryKeyRelatedField(
         many=True,
@@ -22,4 +23,3 @@ class EntrySerializer(serializers.ModelSerializer):
             'updated_at',
         ]
         read_only_fields = ['display_name']
-

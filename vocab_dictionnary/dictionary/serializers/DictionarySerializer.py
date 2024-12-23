@@ -3,12 +3,20 @@ from ..serializers import EntrySerializer
 from ..models import Dictionary
 from random import sample
 
+
 class DictionarySerializer(serializers.ModelSerializer):
     entries = serializers.SerializerMethodField()
+    user = serializers.StringRelatedField(read_only=True)
 
     class Meta:
         model = Dictionary
-        fields = ['id', 'name', 'source_language', 'target_language', 'entries']
+        fields = ['id',
+                  'name',
+                  'source_language',
+                  'target_language',
+                  'entries',
+                  'user'
+                  ]
         read_only_fields = ['id']
 
     def get_entries(self, obj):

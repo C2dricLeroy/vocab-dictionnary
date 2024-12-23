@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'dictionary',
     'app_params',
+    'stats',
     'rest_framework.authtoken',
     'social_django',
     'django.contrib.sites',
@@ -134,6 +135,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",
+    "http://localhost:3000",
     "http://87.106.179.104:8000",
     "http://172.27.64.139",
 ]

@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404
 from ..models import Dictionary
 from ..serializers import DictionarySerializer, EntrySerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.exceptions import AuthenticationFailed
 
 
 class DictionaryViewSet(viewsets.ModelViewSet):
@@ -22,3 +23,9 @@ class DictionaryViewSet(viewsets.ModelViewSet):
         serializer = EntrySerializer(entries, many=True)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def perform_create(self, serializer):
+        user = self.request.user
+        if not user.is_authenticated:
+            raise AuthenticationFailed("L'utilisateur n'est pas authentifié.")
+        serializer.save(user=user)
