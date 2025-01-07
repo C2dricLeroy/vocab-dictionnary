@@ -4,8 +4,11 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.shortcuts import get_object_or_404
+from rest_framework.decorators import action
 from ..models import Dictionary, Entry, Description
 from ..serializers import EntrySerializer
+from django.contrib.auth.models import User
+
 
 
 class EntryViewSet(viewsets.ModelViewSet):
@@ -60,3 +63,23 @@ class EntryViewSet(viewsets.ModelViewSet):
                 {'error': str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
+        
+    @action(detail=False, methods=['get'], url_path='recent_activity')
+    def recent_activity(self, request: Request, *args: Any, **kwargs: Any) -> Response:
+        user = self.request.user
+
+        if not user.is_authenticated:
+            return Response(
+                {"error": "User is not authenticated"},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+
+        dictionaries = Dictionary.objects.filter(user=user)
+
+        recent_entries = Entry.objects.filter(
+            dictionaries__in=dictionaries
+        ).distinct().order_by('-created_at')[:10]
+
+        serializer = self.get_serializer(recent_entries, many=True)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
